@@ -1,0 +1,20 @@
+{
+    "teams": [
+        {"name": "Brasil", "ranking": 1},
+        {"name": "Polonia", "ranking": 2},
+        {"name": "Italia", "ranking": 3},
+        {"name": "Francia", "ranking": 4},
+        {"name": "Estados Unidos", "ranking": 5},
+        {"name": "Japón", "ranking": 6},
+        {"name": "Argentina", "ranking": 7},
+        {"name": "Eslovenia", "ranking": 8},
+        {"name": "Serbia", "ranking": 9},
+        {"name": "Irán", "ranking": 10},
+        {"name": "Cuba", "ranking": 11},
+        {"name": "Países Bajos", "ranking": 12},
+        {"name": "Canadá", "ranking": 13},
+        {"name": "Alemania", "ranking": 14},
+        {"name": "Turquía", "ranking": 15},
+        {"name": "Bulgaria", "ranking": 16}
+    ]
+}
