@@ -1,0 +1,28 @@
+[
+  {
+    "id": "hist-001",
+    "homeTeam": "Brazil",
+    "awayTeam": "Poland",
+    "date": "2023-06-15",
+    "result": "3-1",
+    "sets": ["25-22", "22-25", "25-20", "25-18"],
+    "stats": {
+      "aces": [7, 4],
+      "blocks": [12, 8],
+      "attackEff": [0.54, 0.48]
+    }
+  },
+  {
+    "id": "hist-002",
+    "homeTeam": "USA",
+    "awayTeam": "Italy",
+    "date": "2023-06-16",
+    "result": "3-2",
+    "sets": ["25-27", "25-23", "22-25", "25-21", "15-12"],
+    "stats": {
+      "aces": [9, 6],
+      "blocks": [10, 11],
+      "attackEff": [0.51, 0.49]
+    }
+  }
+]

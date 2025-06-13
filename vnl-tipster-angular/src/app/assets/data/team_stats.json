@@ -1,0 +1,23 @@
+{
+  "Brazil": {
+    "win_rate": 0.85,
+    "attack_avg": 0.52,
+    "defense_avg": 0.78,
+    "aces_avg": 8.2,
+    "blocks_avg": 9.5
+  },
+  "Poland": {
+    "win_rate": 0.75,
+    "attack_avg": 0.48,
+    "defense_avg": 0.72,
+    "aces_avg": 7.8,
+    "blocks_avg": 8.9
+  },
+  "USA": {
+    "win_rate": 0.8,
+    "attack_avg": 0.51,
+    "defense_avg": 0.75,
+    "aces_avg": 8.0,
+    "blocks_avg": 9.2
+  }
+}

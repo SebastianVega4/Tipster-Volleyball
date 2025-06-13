@@ -1,0 +1,65 @@
+<div class="container py-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="mb-0">Partidos en Vivo</h2>
+    <span class="badge bg-danger pulse">
+      <i class="fas fa-circle me-1"></i> EN VIVO
+    </span>
+  </div>
+
+  <div class="row g-4">
+    <div *ngFor="let match of matches" class="col-md-6">
+      <div class="card match-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span class="badge bg-primary">Set {{ match.currentSet }}</span>
+          <span class="fw-bold">{{ match.currentScore }}</span>
+        </div>
+        
+        <div class="card-body">
+          <div class="row align-items-center mb-3">
+            <div class="col-5 text-end">
+              <h5>{{ match.homeTeam }}</h5>
+              <small class="text-muted">Local</small>
+            </div>
+            
+            <div class="col-2 text-center">
+              <div class="vs-circle">VS</div>
+            </div>
+            
+            <div class="col-5">
+              <h5>{{ match.awayTeam }}</h5>
+              <small class="text-muted">Visitante</small>
+            </div>
+          </div>
+          
+          <!-- Probabilidades -->
+          <div class="odds-container mb-3">
+            <div class="odds-bar">
+              <div class="odd home-odd" [style.width]="getProgressWidth(match.odds.home)">
+                {{ match.odds.home | percent:'1.0-1' }}
+              </div>
+              <div class="odd away-odd" [style.width]="getProgressWidth(match.odds.away)">
+                {{ match.odds.away | percent:'1.0-1' }}
+              </div>
+            </div>
+          </div>
+          
+          <!-- Estadísticas -->
+          <div class="stats-grid">
+            <div class="stat">
+              <span>Aces</span>
+              <strong>{{ match.stats.aces[0] }} - {{ match.stats.aces[1] }}</strong>
+            </div>
+            <div class="stat">
+              <span>Bloqueos</span>
+              <strong>{{ match.stats.blocks[0] }} - {{ match.stats.blocks[1] }}</strong>
+            </div>
+            <div class="stat">
+              <span>Ataque</span>
+              <strong>{{ match.stats.attackEff[0] | percent }} - {{ match.stats.attackEff[1] | percent }}</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
